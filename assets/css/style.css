@@ -189,10 +189,48 @@ p {
   -webkit-animation: bounceimg 1s ease-in-out 0s infinite alternate;
   animation: bounceimg 1s ease-in-out 0s infinite alternate;
 }
-
-
-
-
+/*------------------3.company_main_area css------------------*/
+.company_logo_area{
+  
+}
+.company_logo_area ul{
+  align-items: center;
+  justify-content: space-between;
+}
+.company_logo_area ul li a img{
+  width: 55.05px;
+  height: 31.06px;
+}
+.company_logo_area ul li:nth-child(2) a img{
+  width: 84px;
+  height: 25px;
+}
+.company_logo_area ul li:nth-child(3) a img{
+  width: 84px;
+  height: 26px;
+}
+.company_logo_area ul li:nth-child(4) a img{
+  width: 99.12px;
+  height: 39.61px;
+}
+.company_logo_area ul li:nth-child(5) a img{
+  width: 97px;
+  height: 28px;
+}
+.company_logo_area ul li:nth-child(6) a img{
+  width: 111px;
+  height: 26px;
+}
+.company_logo_area ul li:nth-child(6) a img{
+  width: 91px;
+  height: 38px;
+}
+.company_main_area hr {
+	border: 1px solid #AAAAAA26;
+}
+.company_logo_area {
+	padding: 34px 0 34px;
+}
 
 
 
