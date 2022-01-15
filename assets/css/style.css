@@ -66,6 +66,8 @@ body{
 }
 /* defult class */
 .d_flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .container{
@@ -96,7 +98,8 @@ h3 {
 	font-weight: 500;
 	font-size: 28px;
 	line-height: 40px;
-	font-feature-settings: 'liga' off;
+	-webkit-font-feature-settings: 'liga' off;
+	        font-feature-settings: 'liga' off;
 	color: #18191F;
 }
 h4{
@@ -104,7 +107,8 @@ h4{
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 40px;
-	font-feature-settings: 'liga' off;
+	-webkit-font-feature-settings: 'liga' off;
+	        font-feature-settings: 'liga' off;
 	color: #18191F;
 }
 p {
@@ -112,7 +116,8 @@ p {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
-	font-feature-settings: 'liga' off;
+	-webkit-font-feature-settings: 'liga' off;
+	        font-feature-settings: 'liga' off;
 	color: #3A3A3A;
 }
 
@@ -122,13 +127,20 @@ p {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 36px;
-	font-feature-settings: 'liga' off;
+	-webkit-font-feature-settings: 'liga' off;
+	        font-feature-settings: 'liga' off;
 	color: #3A3A3A;
 }
 .header_content_area {
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	            -ms-grid-row-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	padding-top: 80px;
 }
 .menu_bar{
@@ -139,10 +151,12 @@ p {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
-	font-feature-settings: 'liga' off;
+	-webkit-font-feature-settings: 'liga' off;
+	        font-feature-settings: 'liga' off;
 	color: #3A3A3A;
 	display: inline-block;
 	padding: 0 17px;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 .menu ul li a:hover, .cart_area ul li a i:hover{
@@ -155,19 +169,28 @@ p {
 }
 .cart_area ul li a i{
   color: #000;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 /* -----------------------2.banner_main_area css------------------*/
 .banner_content_area {
-	flex-wrap: wrap;
-	align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	            -ms-grid-row-align: center;
+	        align-items: center;
 	padding: 60px 0 69px;
 }
 .banner_left_area{
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 .banner_right_area{
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 .banner_txt p{
   margin: 16px 0;
@@ -218,8 +241,13 @@ p {
   
 }
 .company_logo_area ul{
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .company_logo_area ul li a img{
   width: 55.05px;
@@ -263,9 +291,15 @@ p {
   text-align: center;
 }
 .collection_content_area{
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
 }
 .single_collection_items img {
@@ -278,7 +312,9 @@ p {
 	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	padding: 14px;
-	flex: 0 0 calc(33.33% - 50px);
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 calc(33.33% - 50px);
+	        flex: 0 0 calc(33.33% - 50px);
 	margin: auto;
   margin-bottom: 30px;
 }
@@ -330,13 +366,21 @@ p {
   margin-left: 8px;
 }
 .client_says_content {
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	            -ms-grid-row-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-top: 50px;
 }
 .single_client_feedback {
-	flex: 0 0 calc(33.33% - 50px);
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 calc(33.33% - 50px);
+	        flex: 0 0 calc(33.33% - 50px);
 	background: #FFFFFF;
 	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
@@ -347,7 +391,8 @@ p {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .single_client_feedback h4 {
 	color: rgba(224, 44, 109, 0.87);
@@ -371,7 +416,8 @@ p {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 36px;
-	font-feature-settings: 'liga' off;
+	-webkit-font-feature-settings: 'liga' off;
+	        font-feature-settings: 'liga' off;
 	color: #FFFFFF;
 	margin-bottom: 10px;
 	display: block;
@@ -381,12 +427,17 @@ p {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 24px;
-	font-feature-settings: 'liga' off;
+	-webkit-font-feature-settings: 'liga' off;
+	        font-feature-settings: 'liga' off;
 	color: #D9DBE1;
 }
 .footer_social_icon ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: 30px;
 }
 .footer_social_icon ul li a {
