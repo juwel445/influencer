@@ -131,8 +131,9 @@ p {
 	flex-wrap: wrap;
 	padding-top: 80px;
 }
-.menu ul{}
-.menu ul li{}
+.menu_bar{
+  display: none;
+}
 .menu ul li a {
 	font-style: normal;
 	font-weight: 600;
@@ -394,7 +395,7 @@ p {
 	font-size: 20px;
 }
 
-
+/*----------end css--------- */
 
 
 

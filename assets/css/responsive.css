@@ -1,1 +1,59 @@
-responsive.css
+@media all and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media all and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .banner_content_area {
+        flex-direction: column;
+    }
+    .banner_right_images {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 500px;
+    }
+    .banner_right_area {
+        order: -1;
+        margin: 50px 0;
+    }
+    .banner_txt {
+        text-align: center;
+    }
+    .company_logo_area ul {
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .company_logo_area ul li {
+        flex: 0 0 25%;
+        margin-bottom: 25px;
+    }
+    .single_collection_items {
+        flex: 0 0 calc(50% - 50px);
+    }
+    .collection_content_area {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .single_collection_items:nth-child(9) {
+        flex: 0 0 calc(50% - 50px);
+        margin-left: 10px;
+    }
+    .single_client_feedback {
+        flex: 0 0 calc(50% - 40px);
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media all and (max-width: 575px) {}
+@media all and (max-width: 450px) {}
